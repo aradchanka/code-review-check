@@ -1,6 +1,9 @@
-# Code Review notes
+# Code Review Checklist
+[Visit Checklist website](https://aradchanka.github.io/code-review-checklist)
+
 The code review checklist is based on [the video about code review from Timur Shemsedinov channel](https://youtu.be/EKL6NiIQ6ZU?si=gW3isHNWT5bz1QGP)
 
+# Code Review notes
 Code Review Tasks:
 - Improving code quality and finding better solutions
 - Increasing the qualifications of developers
