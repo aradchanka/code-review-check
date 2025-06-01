@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Review Checklist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Code Review Checklist</h1>
+            <p class="subtitle">Checklist for reviewing Pull Requests</p>
+        </header>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+            <span class="progress-text" id="progressText">0% complete</span>
+        </div>
+
+        <div class="controls">
+            <button id="resetBtn" class="btn btn-secondary">Reset All</button>
+            <button id="expandBtn" class="btn btn-primary">Expand All</button>
+        </div>
+
+        <main class="checklist-container">
+            <section class="checklist-section">
+                <h2 class="section-title" data-toggle="collapse">
+                    <span class="toggle-icon">▼</span>
+                    Basic Checks
+                </h2>
+                <div class="section-content">
+                    <label class="checkbox-item">
+                        <input type="checkbox" class="checklist-checkbox">
+                        <span>Compliance with technical requirements</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" class="checklist-checkbox">
+                        <span>Follows project structure and architecture</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" class="checklist-checkbox">
+                        <span>PR has clear purpose and description</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" class="checklist-checkbox">
+                        <span>PR size is optimal (not too large/small)</span>
+                    </label>
+                </div>
+            </section>
+
+            <section class="checklist-section">
+                <h2 class="section-title" data-toggle="collapse">
+                    <span class="toggle-icon">▼</span>
+                    Code Quality
+                </h2>
+                <div class="section-content">
+                    <label class="checkbox-item">
+                        <input type="checkbox" class="checklist-checkbox">
+                        <span>Code is readable and understandable</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" class="checklist-checkbox">
+                        <span>Variable and function naming is clear</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" class="checklist-checkbox">
+                        <span>No anti-patterns present</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" class="checklist-checkbox">
+                        <span>Code is self-documenting (comments where needed)</span>
+                    </label>
+                </div>
+            </section>
+
+            <section class="checklist-section">
+                <h2 class="section-title" data-toggle="collapse">
+                    <span class="toggle-icon">▼</span>
+                    Performance & Optimization
+                </h2>
+                <div class="section-content">
+                    <label class="checkbox-item">
+                        <input type="checkbox" class="checklist-checkbox">
+                        <span>Optimal algorithm complexity</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" class="checklist-checkbox">
+                        <span>Appropriate data structures used</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" class="checklist-checkbox">
+                        <span>No memory leaks</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" class="checklist-checkbox">
+                        <span>No unnecessary dependencies</span>
+                    </label>
+                </div>
+            </section>
+
+            <section class="checklist-section">
+                <h2 class="section-title" data-toggle="collapse">
+                    <span class="toggle-icon">▼</span>
+                    Security & Reliability
+                </h2>
+                <div class="section-content">
+                    <label class="checkbox-item">
+                        <input type="checkbox" class="checklist-checkbox">
+                        <span>No security vulnerabilities</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" class="checklist-checkbox">
+                        <span>Proper error handling</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" class="checklist-checkbox">
+                        <span>No race conditions</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" class="checklist-checkbox">
+                        <span>Edge cases considered</span>
+                    </label>
+                </div>
+            </section>
+
+            <section class="checklist-section">
+                <h2 class="section-title" data-toggle="collapse">
+                    <span class="toggle-icon">▼</span>
+                    Architecture & Integration
+                </h2>
+                <div class="section-content">
+                    <label class="checkbox-item">
+                        <input type="checkbox" class="checklist-checkbox">
+                        <span>Low coupling between modules</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" class="checklist-checkbox">
+                        <span>High cohesion within modules</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" class="checklist-checkbox">
+                        <span>Proper component structure</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" class="checklist-checkbox">
+                        <span>No bad coding habits</span>
+                    </label>
+                </div>
+            </section>
+
+            <section class="checklist-section">
+                <h2 class="section-title" data-toggle="collapse">
+                    <span class="toggle-icon">▼</span>
+                    Process & Communication
+                </h2>
+                <div class="section-content">
+                    <label class="checkbox-item">
+                        <input type="checkbox" class="checklist-checkbox">
+                        <span>Author reviewed code before submission</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" class="checklist-checkbox">
+                        <span>Tests in separate commit (if applicable)</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" class="checklist-checkbox">
+                        <span>No new commits during review</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" class="checklist-checkbox">
+                        <span>All reviewer questions answered</span>
+                    </label>
+                </div>
+            </section>
+        </main>
+
+        <div class="notes-section">
+            <h2>Notes</h2>
+            <textarea id="notesArea" placeholder="Add your code review notes here..."></textarea>
+            <button id="saveNotesBtn" class="btn btn-primary">Save Notes</button>
+        </div>
+
+        <footer>
+            <p>Code Review Checklist • For improving code quality and knowledge sharing</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
